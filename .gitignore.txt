@@ -1,3 +1,0 @@
-/sass/*
-/css/style.css.map
-.gitignore.txt
