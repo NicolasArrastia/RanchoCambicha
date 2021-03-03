@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title class="notranslate">RanchoNuevo</title>
+    <meta name="google" content="notranslate">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alquila en Rancho Cambicha para unas vacaciones sustentables y pet friendly. En General Madariaga, ruta 74 al kilómetro 23 - Buenos Aires, Argentina">
+    <meta name="og:description" content="Alquila en Rancho Cambicha para unas vacaciones sustentables y pet friendly en General Juan Madariaga, ruta 74 al kilómetro 23 ¡Te esperamos!">
+    <meta name="og:title" content="Rancho Cambicha">
+    <meta name="og:url" content="ranchocambicha.com">
+    <meta name="og:image" content="https://lh3.googleusercontent.com/039ZdFAp7SQPQoiT6PWLgWODY24vCCKKF4BiERvc0ZLez93PP74IUKsw8lO19lWZsEHNDA0ahsvF0mJRn3Np7MZLUbJjgQ6tsbIJEYyV4eDj-733IbmiPIMDPzZBd4VQrJ0Rcush0g=s200-p-k">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/09f81313b3.js" crossorigin="anonymous"></script>
+    <!-- Icon -->
+    <link rel="shortcut icon" href="img/RanchoCambicha-LogoNegro.svg" type="image/svg+xml">
+</head>
+<body>
+    <div id="app">
+        <header class="ba-black">
+            <div @click="headerMenu = !headerMenu" class="menu-button">
+                <i class="fas fa-bars"></i>
+            </div>
+            <a class="logo-container" href="index.html">
+                <img class="logo" src="img/RanchoCambicha-Logo.svg" alt="Rancho Cambicha">
+            </a>
+            <nav v-if="headerMenu" class="h-nav">
+                <ul>
+                    <li v-for="link in links">
+                        <a @click="localRedirect()" :href="link.src">{{link.name}}</a>
+                        <div class="active-underline"></div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="p-img">
+                <div>
+                    <h1>
+                        <span class="notranslate">
+                            Rancho Cambicha
+                        </span>
+                    </h1>
+                    <p>
+                        Hay lugares donde uno se queda, y lugares que se quedan en uno.
+                    </p>
+                </div>
+            </div>
+            <section id="about">
+                <h2 class="title">¿Quiénes somos?</h2>
+                <p class="center">Somos un grupo de gente apasionados por las dos ruedas y la vida simple.</p>
+                <p class="center">Este proyecto empezó como un sueño y hoy lo estamos logrando en un hermoso lugar de Buenos Aires, General Juan Madariaga.</p>
+            </section>
+
+            <section id="ideals">
+                <h2 class="title">Nuestros ideales</h2>
+                <ul class="list01">
+                    <li>
+                        <h3>Ecoturismo</h3>
+                        <p>Turismo basado en la naturaleza que busca proteger las áreas naturales y potenciar el respeto y preservacion del estilo de vida de las zonas rurales. Un estilo de turismo alternativo diferente al turismo tradicional en le cual se privilegia la sustentabilidad, la preservacion y la apreciación del medio. Viajar y ser responsable de las áreas naturales para conservar el medio ambiente y mejorar el bienestar de las personas locales.</p>
+                    </li>
+                    <li>
+                        <h3>Turismo Alternativo</h3>
+                        <p>El Turismo Alternativo surge como una propuesta diferente al turismo de masas. Se caracteriza por el tipo de empresa, pequeña, mediana o familiar donde exista la posibilidad de mayor contacto con las comunidades y el respeto por la naturaleza. El Turismo Alternativo se asocia al descanso, el paisaje, a la cultura tradicional, a la huida de la masificación y al contacto con la naturaleza.</p>
+                    </li>
+                    <li>
+                        <h3>Turismo Sustentable</h3>
+                        <p>El Turismo Sustentable es una actividad comprometida a hacer un bajo impacto sobre el medio ambiente y la cultura local, al tiempo que contribuye a generar ingresos y empleo para la población.</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="title">Vacaciones sustentables en Rancho Cambicha</h2>
+                <p class="center">Te dejamos algunos consejos para que tus vacaciones sean de bajo impacto ambiental:</p>
+                <ul class="tips">
+                    <li>Por respeto a los lugares que visitas, lleva tu basura de vuelta.</li>
+                    <li>Si visitas lugares contaminados, aprovecha a recoger basura durante tus caminatas, aunque no sea tuya.</li>
+                    <li>Evita los plásticos de un solo uso y prioriza los reutilizables, para generar la menor cantidad de residuos posible.</li>
+                    <li>Apoya a la economía local y respeta las tradiciones y costumbres locales.</li>
+                </ul>
+                <p class="center">Y vos, ¿Qué medidas tomas para unas vacaciones Sutentables?</p>
+            </section>
+
+            <section id="faq">
+                <h2 class="title">Preguntas más frecuentes</h2>
+                <ul class="list01">
+                    <li class="w100">
+                        <h3>¿Dónde estámos?</h3>
+                        <p>Nos encontramos en General Juan Madariaga, ruta 74 kilometro 23, en la provincia de Buenos Aires, Argentina. A 316 Km del obelisco y 290 Km de la ciudad de La Plata.</p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d815501.7679798031!2d-57.66128213437501!3d-37.0204403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959b794a561f5a27%3A0x8f2fb7134cd1bff0!2sRancho%20Cambicha!5e0!3m2!1ses-419!2sar!4v1608408842309!5m2!1ses-419!2sar" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </li>
+                    <li>
+                        <h3>¿Aceptan mascotas?</h3>
+                        <p>Sí, somos Pet friendly, no dudes en venir con tu mejor amigo animal.</p>
+                    </li>
+                    <li>
+                        <h3>¿Qué es el salón SUM?</h3>
+                        <p>El salón SUM es un salón multi usos, multi propósitos y compartido, que está compuesto por:
+                        </p>
+                        <ul>
+                            <li v-for="item in SUM.includes">{{item}}</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="network">
+                <h2 class="title">Síguenos y / o contactanos</h2>
+                <ul>
+                    <li>
+                        <a class="instagram-logo" href="https://www.instagram.com/ranchocambicha/" target="_blank" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="airbnb-logo" href="https://www.airbnb.com.ar/rooms/39398457" target="_blank" title="Airbnb">
+                            <i class="fab fa-airbnb"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="booking-logo" href="https://www.booking.com/hotel/ar/rancho-cambicha-hostel-de-campo.es-ar.html" target="_blank" title="Booking">
+                            <p>B.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="facebook-logo" href="https://es-la.facebook.com/ranchocambicha74" target="_blank" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/5491169142449/" class="whatsapp-logo" target="_blank" title="Whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="gallery">
+                <h2 class="title">Galería</h2>
+
+                <div class="gallery" v-for="house in houses">
+                    <h3 class="notranslate">{{house.name}}</h3>
+                    <ul>
+                        <li v-for="photo in house.photos" @click="photoView = photo; photoViewer = true">
+                            <div>
+                                <img :src="photo" :alt="photo">
+                            </div>
+                        </li>
+                    </ul>    
+                </div>
+
+                <div class="gallery" v-for="item in ranchophotos">
+                    <h3 :class="{ 'notranslate': !item.translate }">{{item.name}}</h3>
+                    <ul>
+                        <li v-for="photo in item.photos" @click="photoView = photo; photoViewer = true">
+                            <div>
+                                <img :src="photo" :alt="photo">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="rent">
+                <h2 class="title">
+                    Alquilar
+                </h2>
+                <ul class="price-list">
+                    <li v-for="house in houses">
+                        <div class="price-card">
+                            <div class="card-name">
+                                <h2 class="notranslate">{{house.name}}</h2>
+                            </div>
+
+                            <div class="card-price">
+                                <span class="notranslate">ARS$</span>
+                                <p>{{house.price}}</p>
+                                <span>/noche</span>
+                            </div>
+                            
+                            <div class="list-card">
+                                <div class="arrow-price"></div>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Capacidad para {{house.capacity}} personas</li>
+                                    <li v-for="item in house.includes"><i class="fas fa-check"></i> {{item}}</li>
+                                </ul>
+                            </div>
+
+                            <div class="card-button">
+                                <a :href="house.link" target="_blank">comprar</a>
+                            </div>
+
+                        </div>
+                    </li>
+                </ul>
+                <div class="offer">
+                    <h3>¡Oferta especial!</h3>
+                    <p>¡Pagando una noche en <span class="notranslate">Rancho Cambicha</span> te llevas otra noche gratis!</p>
+                    <p class="details">La oferta solo es válida una vez por año y en temporada baja</p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="web">
+                <a class="instagram-logo" href="https://www.instagram.com/ranchocambicha/" target="_blank" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a class="airbnb-logo" href="https://www.airbnb.com.ar/rooms/39398457" target="_blank" title="Airbnb">
+                    <i class="fab fa-airbnb"></i>
+                </a>
+
+                <a class="booking-logo" href="https://www.booking.com/hotel/ar/rancho-cambicha-hostel-de-campo.es-ar.html" target="_blank" title="Booking">
+                    <p class="notranslate">B.</p>
+                </a>
+
+                <a class="facebook-logo" href="https://es-la.facebook.com/ranchocambicha74" target="_blank" title="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </div>
+            <div class="more-info">
+                <a href="https://www.linkedin.com/in/nicol%C3%A1s-arrast%C3%ADa/" target="_blank">Desarrollador Web <i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="copyright">
+                <p>
+                    @ 2021 | Rancho Cambicha - Ruta 74 Kilómetro 23
+                </p>
+            </div>
+        </footer>
+
+
+        <div v-if="photoViewer" class="photoViewer" @click="photoViewer=false">
+            <i @click="photoViewer=false" class="fas fa-times-circle"></i>
+            <div class="container">
+                <img :src="photoView" alt="Error en la descarga">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/main.js"></script>
+
+
+</body>
+</html>
